@@ -1,0 +1,136 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background-color:  hsl(204, 43%, 93%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    max-width: 500px;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    flex-basis: 100%;
+    row-gap: 20px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box-1 h2 {
+    color: hsl(179, 62%, 43%);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.box-1 h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.box-1 p {
+    color: hsl(204, 4%, 75%);
+}
+
+/* box2 */
+
+.box-2 {
+   background-color: hsl(179, 62%, 43%);
+   flex-basis: 50%;
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
+   padding: 20px;
+   box-sizing: border-box;
+   border-bottom-left-radius: 10px;
+}
+
+.box-2 h2
+{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.box-2 p {
+    color: #fff;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.box-2 a {
+    padding: 5px 10px;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.box-2 a:hover {
+    background-color: hsla(71, 73%, 54%, 0.789);
+}
+
+.box-2 span {
+    color: #ccc;
+    font-weight: normal;
+    font-size: medium;
+}
+
+
+/* box-3 */
+
+.box-3 {
+    background-color: hsla(179, 62%, 43%, 0.746);
+    flex-basis: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-bottom-right-radius: 10px;
+}
+
+.box-3 h2 {
+    font-size: 1rem;
+    color: #fff;
+    margin: 5%;
+
+}
+
+.box-3 p {
+    color: #ffffff;  
+    line-height: 1rem;
+    font-size: 0.75rem;
+    margin: 5%;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .box-2 {
+        border-bottom-left-radius: 0;
+    }
+}
